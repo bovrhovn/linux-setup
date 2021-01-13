@@ -3,6 +3,8 @@
 Currently, I am using Linux Mint as my primary distribution. I like it as it has quite useful settings and tools out of the box. Also, looks nice with themes :) This repo enables me to write out
 tools, setup, configuration, everything to setup my machine from scratch.
 
+For new machine, setup a bare git repository and sync files to the system. More [here](https://www.atlassian.com/git/tutorials/dotfiles).
+
 ## Tools, that I use daily
 
 I use the following tools daily (order is not particular):
@@ -43,7 +45,7 @@ This tools are nice to have, but not essential for work:
 
 # Bash config
 
-TBD
+Bash is available [here](https://github.com/bovrhovn/linux-setup/blob/main/.bashrc). 
 
 ### Aliases and inital setup
 
@@ -51,7 +53,8 @@ TBD
 
 # CREDITS
 
-TBD
+1. [Kubectl aliases ](https://github.com/ahmetb/kubectl-aliases) - collection of kubectl aliases for working with k8s
+2. [DistroTube repo](https://gitlab.com/dwt1) - aliases and config file inspiration from Derek Taylor
 
 
 
