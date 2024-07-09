@@ -1,6 +1,6 @@
 # My Linux Setup
 
-This repo enables me to put out tools I use or have tried with setup, configuration, everything needed to make my machine work for me and be more productive.
+This repo helps me to remember tools I use (or have tried) to easily install, setup, configure, manage the flow to be more productive.
 
 **Quick tip**:
 
@@ -36,17 +36,17 @@ I use the following tools daily (order is not particular):
 15. [CronTabUI](https://github.com/alseambusher/crontab-ui) - UI in nodejs for managing cron tabs
 16. [Localsend](https://localsend.org/) - sending and sharing files to nearby devices
     
-
 ### Terminal tools
 
-1. **cargo** - rust repository (sudo apt install cargo) - add to path **PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"**
-2. **cargo-Update** install - updater for packages - **cargo install cargo-update (update all packages - cargo install-update -a)**
-3. [exa](https://the.exa.website/) - improved file lister with more features and better defaults (cargo install exa) - **alias lss='exa -al --color=always --group-directories-first'**
-4. [Ranger](https://github.com/ranger/ranger) - ranger is a console file manager with VI key bindings
-5. [procs](https://github.com/dalance/procs) - replacement for ps in rust
-6. [zellij](https://zellij.dev/) - terminal workspace with batteries included
-7. [youtube-dl](https://github.com/ytdl-org/youtube-dl) - command line program to download videos from Youtube.com and other video sites
-8. [gron](https://github.com/TomNomNom/gron) - make json greppable 
+1. [fzf](https://github.com/junegunn/fzf) - general purpose command line fuzzy finder
+2. [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) - rust repository - add to path **PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"**
+3. [cargo-update install](https://doc.rust-lang.org/cargo/commands/cargo-update.html) - updater for packages - **cargo install cargo-update (update all packages - cargo install-update -a)**
+4. [exa](https://the.exa.website/) - improved file lister with more features and better defaults (cargo install exa) - **alias lss='exa -al --color=always --group-directories-first'**
+5. [Ranger](https://github.com/ranger/ranger) - ranger is a console file manager with VI key bindings
+6. [procs](https://github.com/dalance/procs) - replacement for ps in rust
+7. [zellij](https://zellij.dev/) - terminal workspace with batteries included
+8. [youtube-dl](https://github.com/ytdl-org/youtube-dl) - command line program to download videos from Youtube.com and other video sites
+9. [gron](https://github.com/TomNomNom/gron) - make json greppable 
 
 ### Developer tools
 
@@ -70,16 +70,18 @@ I use the following tools daily (order is not particular):
 9. [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/) - you can add media controls, notifications, remove buttons
 10. [CoverFlowAltTab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/) - 3d app switcher
 11. [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - show info about CPU, memory, etc.
+12. [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/) - woobly windows effect
+13. [Transparent Top Bar](https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/) - transparent top bar in Gnome Shell with adjustable transparency 
 
 ## Tools nice to have
 
 These tools are nice to have, but not essential for work:
+
 1. [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep is a line-oriented search tool that recursively searches your current directory for a regex pattern
-2. [fzf](https://github.com/junegunn/fzf) - general purpose command line fuzzy finder
 
 # Bash config
 
-Bash is available [here](https://github.com/bovrhovn/linux-setup/blob/main/.bashrc). 
+Bash simple template is available [here](https://github.com/bovrhovn/linux-setup/blob/main/.bashrc). 
 
 ### Aliases and inital setup
 
@@ -100,9 +102,3 @@ alias ..='cd ..'
 
 1. [Kubectl aliases ](https://github.com/ahmetb/kubectl-aliases) - collection of kubectl aliases for working with k8s
 2. [DistroTube repo](https://gitlab.com/dwt1) - aliases and config file inspiration from Derek Taylor
-
-
-
-
-
-
