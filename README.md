@@ -1,9 +1,10 @@
 # My Linux Setup
 
-Currently, I am using Linux Mint as my primary distribution. I like it as it has quite useful settings and tools out of the box. Also, looks nice with themes :) This repo enables me to write out
-tools, setup, configuration, everything to setup my machine from scratch.
+This repo enables me to put out tools I use or have tried with setup, configuration, everything needed to make my machine work for me and be more productive.
 
-For new machine, set up a bare git repository and sync files to the system. More [here](https://www.atlassian.com/git/tutorials/dotfiles).
+**Quick tip**:
+
+For new machine, set up a bare git repository and sync files in this repo to the newly created Linux system. More [here](https://www.atlassian.com/git/tutorials/dotfiles).
 
 ## Tools, that I use daily
 
