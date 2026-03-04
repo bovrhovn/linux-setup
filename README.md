@@ -1,104 +1,169 @@
-# My Linux Setup
+# 🐧 My Linux Setup
 
-This repo helps me to remember tools I use (or have tried) to easily install, setup, configure, manage the flow to be more productive.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Platform](https://img.shields.io/badge/Platform-Linux-blue?logo=linux&logoColor=white)](https://www.linux.org/)
+[![Shell](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 
-**Quick tip**:
+> A curated collection of tools, scripts, aliases, and configurations to quickly set up a productive Linux environment.
 
-For new machine, set up a bare git repository and sync files in this repo to the newly created Linux system. More [here](https://www.atlassian.com/git/tutorials/dotfiles).
+**💡 Quick tip for new machines:**  
+Set up a bare git repository and sync files in this repo to the newly created Linux system.
+Learn more: [Dotfiles with bare git repos](https://www.atlassian.com/git/tutorials/dotfiles).
 
-## Tools, that I use daily
+---
 
-I use the following tools daily (order is not particular):
+## 📋 Table of Contents
 
-### Picture utils 
+- [🛠️ Daily Tools](#️-daily-tools)
+  - [🖼️ Picture Utils](#️-picture-utils)
+  - [⚙️ Utilities](#️-utilities)
+  - [💻 Terminal Tools](#-terminal-tools)
+  - [👨‍💻 Developer Tools](#-developer-tools)
+- [🧩 Gnome Extensions](#-gnome-extensions)
+- [✨ Nice to Have](#-nice-to-have)
+- [⌨️ Bash Config & Aliases](#️-bash-config--aliases)
+- [📜 Scripts](#-scripts)
+- [🙏 Credits](#-credits)
 
-1. [Flameshot](https://github.com/flameshot-org/flameshot) - screenshot utility --> easy to use, configure and feature rich
-2. [feh](https://feh.finalrewind.org/) - x11 image viewer in console (also good viewer is [fim](https://net2.com/how-to-display-images-in-the-command-line-in-linux-ubuntu/))
-3. [simple screen recorder](https://www.maartenbaert.be/simplescreenrecorder/) - Linux program to record programs and games
-4. [fondo](https://github.com/calo001/fondo) - wallpaper app
+---
 
-### Utilities
+## 🛠️ Daily Tools
 
-1. [brew](https://docs.brew.sh/Homebrew-on-Linux) - package manager for Linux 
-2. [ULauncher](https://ulauncher.io/) - application launcher for Linux (great [extension](https://ext.ulauncher.io/) libraries)
-3. [Stacer](https://github.com/oguzhaninan/Stacer/) - system optimizer and monitor tool
-4. [CatFish](https://launchpad.net/catfish-search/) - powerful search GUI tool, which enables you to search inside files as well - [setup and use instructions](https://beyondlocalhost.tech/2020/03/22/search-inside-files-with-catfish-search-utility/)
-5. [TLP](https://www.tecmint.com/tlp-increase-and-optimize-linux-battery-life/) - feature rich and command line tool for advanced power management
-6. [Devour](https://github.com/salman-abedin/devour) - hides your current window before launching an external program and unhides it after quitting
-7. [CopyQ](https://hluk.github.io/CopyQ/) - monitors system clipboard and saves its content in customized tabs
-8. [InsyncHQ](https://www.insynchq.com/) - sync OneDrive & Google Drive files straight from desktop (integrate into File manager)
-9. [Standard Notes](https://standardnotes.org/) - note taking app with encryption in mind
-10. [CPUFreq](https://github.com/AdnanHodzic/auto-cpufreq) - great tool to monitor and adjust CPU freq to save on memory and to last the battery
-11. [Starship](https://starship.rs/) - customizable prompt for bash, PowerShell
-12. [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) - useful util for adding appimage to desktop entry for launcher to pickup and to be able to install it in the appropriate directory
-13. [Curtail](https://github.com/Huluti/Curtail) - image compression tool
-14. [Blanket](https://apps.gnome.org/Blanket/) - app for listening to ambient sounds
-15. [CronTabUI](https://github.com/alseambusher/crontab-ui) - UI in nodejs for managing cron tabs
-16. [Localsend](https://localsend.org/) - sending and sharing files to nearby devices
-    
-### Terminal tools
+### 🖼️ Picture Utils
 
-1. [fzf](https://github.com/junegunn/fzf) - general purpose command line fuzzy finder
-2. [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) - rust repository - add to path **PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"**
-3. [cargo-update install](https://doc.rust-lang.org/cargo/commands/cargo-update.html) - updater for packages - **cargo install cargo-update (update all packages - cargo install-update -a)**
-4. [exa](https://the.exa.website/) - improved file lister with more features and better defaults (cargo install exa) - **alias lss='exa -al --color=always --group-directories-first'**
-5. [Ranger](https://github.com/ranger/ranger) - ranger is a console file manager with VI key bindings
-6. [procs](https://github.com/dalance/procs) - replacement for ps in rust
-7. [zellij](https://zellij.dev/) - terminal workspace with batteries included
-8. [youtube-dl](https://github.com/ytdl-org/youtube-dl) - command line program to download videos from Youtube.com and other video sites
-9. [gron](https://github.com/TomNomNom/gron) - make json greppable 
+| Tool | Description |
+|------|-------------|
+| [Flameshot](https://github.com/flameshot-org/flameshot) | 📸 Screenshot utility — easy to use, configure, and feature rich |
+| [feh](https://feh.finalrewind.org/) | 🖼️ X11 image viewer in console (also see [fim](https://net2.com/how-to-display-images-in-the-command-line-in-linux-ubuntu/)) |
+| [Simple Screen Recorder](https://www.maartenbaert.be/simplescreenrecorder/) | 🎥 Linux program to record programs and games |
+| [fondo](https://github.com/calo001/fondo) | 🌄 Wallpaper app |
 
-### Developer tools
+### ⚙️ Utilities
 
-1. [JetBrains Rider](https://www.jetbrains.com/rider/) - powerful, cross-platform .NET IDE
-2. [JetBrains DataGrip](https://www.jetbrains.com/datagrip/) - many databases, one tool
-3. [Docker](https://www.docker.com/) - runtime for container development
-4. [Podman](https://podman.io/) - alternative to Docker, default on Fedora Workstation
-5. [DevToys](https://devtoys.app/) - useful utilities for development
-6. [Microsoft SQL Server](https://beyondlocalhost.tech/2020/02/24/installing-sql-on-linux-mint/) - RDMS plaform for working with data
-    
-## Gnome Extensions
+| Tool | Description |
+|------|-------------|
+| [brew](https://docs.brew.sh/Homebrew-on-Linux) | 🍺 Package manager for Linux |
+| [ULauncher](https://ulauncher.io/) | 🚀 Application launcher for Linux ([extension library](https://ext.ulauncher.io/)) |
+| [Stacer](https://github.com/oguzhaninan/Stacer/) | 📊 System optimizer and monitor tool |
+| [CatFish](https://launchpad.net/catfish-search/) | 🔍 Powerful search GUI tool with in-file search ([setup guide](https://beyondlocalhost.tech/2020/03/22/search-inside-files-with-catfish-search-utility/)) |
+| [TLP](https://www.tecmint.com/tlp-increase-and-optimize-linux-battery-life/) | 🔋 Feature-rich command line tool for advanced power management |
+| [Devour](https://github.com/salman-abedin/devour) | 🪟 Hides current window before launching an external program |
+| [CopyQ](https://hluk.github.io/CopyQ/) | 📋 Monitors system clipboard and saves its content in customized tabs |
+| [InsyncHQ](https://www.insynchq.com/) | ☁️ Sync OneDrive & Google Drive files from desktop |
+| [Standard Notes](https://standardnotes.org/) | 📝 Note taking app with encryption in mind |
+| [CPUFreq](https://github.com/AdnanHodzic/auto-cpufreq) | ⚡ Monitor and adjust CPU frequency to save battery |
+| [Starship](https://starship.rs/) | 🚀 Customizable prompt for bash and PowerShell |
+| [AppImageLauncher](https://github.com/TheAssassin/AppImageLauncher) | 📦 Add AppImages to desktop launchers easily |
+| [Curtail](https://github.com/Huluti/Curtail) | 🗜️ Image compression tool |
+| [Blanket](https://apps.gnome.org/Blanket/) | 🎵 App for listening to ambient sounds |
+| [CronTabUI](https://github.com/alseambusher/crontab-ui) | ⏱️ Node.js UI for managing cron jobs |
+| [Localsend](https://localsend.org/) | 📡 Send and share files to nearby devices |
 
-1. [ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) - different menus and options
-2. [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) - advanced tiling windows management
-3. [Blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell/)  - you can define, what to blur
-4. [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/) - creates Mac like dock (it is useful to use Dash to dock animations extension as well to pretify)
-5. [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) - top or bottom bar for customization what and how
-6. [Burn my Windows ](https://extensions.gnome.org/extension/4679/burn-my-windows/)- disintegrate your windows with style
-7. [User themes ](https://extensions.gnome.org/extension/19/user-themes/)- load shell themes from user directory
-8. [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) - disable screensaver and auto suspend
-9. [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/) - you can add media controls, notifications, remove buttons
-10. [CoverFlowAltTab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/) - 3d app switcher
-11. [Vitals](https://extensions.gnome.org/extension/1460/vitals/) - show info about CPU, memory, etc.
-12. [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/) - woobly windows effect
-13. [Transparent Top Bar](https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/) - transparent top bar in Gnome Shell with adjustable transparency 
+### 💻 Terminal Tools
 
-## Tools nice to have
+| Tool | Description | Install |
+|------|-------------|---------|
+| [fzf](https://github.com/junegunn/fzf) | 🔎 General-purpose command line fuzzy finder | `apt install fzf` |
+| [cargo](https://doc.rust-lang.org/cargo/getting-started/installation.html) | 🦀 Rust package manager | Add to PATH: `PATH="$HOME/.cargo/bin${PATH:+:${PATH}}"` |
+| [cargo-update](https://github.com/nabijaczleweli/cargo-update) | 🔄 Updater for installed Rust packages | `cargo install cargo-update` then `cargo install-update -a` |
+| [exa](https://the.exa.website/) | 📁 Improved file lister with better defaults | `cargo install exa` |
+| [Ranger](https://github.com/ranger/ranger) | 🗂️ Console file manager with VI key bindings | `apt install ranger` |
+| [procs](https://github.com/dalance/procs) | 🔬 Modern replacement for `ps` written in Rust | `cargo install procs` |
+| [zellij](https://zellij.dev/) | 🖥️ Terminal workspace with batteries included | `cargo install zellij` |
+| [youtube-dl](https://github.com/ytdl-org/youtube-dl) | ▶️ Download videos from YouTube and other sites | `pip install youtube-dl` |
+| [gron](https://github.com/TomNomNom/gron) | 📄 Make JSON greppable | `go install github.com/tomnomnom/gron@latest` |
 
-These tools are nice to have, but not essential for work:
+### 👨‍💻 Developer Tools
 
-1. [ripgrep](https://github.com/BurntSushi/ripgrep) - ripgrep is a line-oriented search tool that recursively searches your current directory for a regex pattern
+| Tool | Description |
+|------|-------------|
+| [JetBrains Rider](https://www.jetbrains.com/rider/) | 🏇 Powerful, cross-platform .NET IDE |
+| [JetBrains DataGrip](https://www.jetbrains.com/datagrip/) | 🗄️ Multi-database IDE — many databases, one tool |
+| [Docker](https://www.docker.com/) | 🐳 Runtime for container development |
+| [Podman](https://podman.io/) | 🦭 Alternative to Docker, default on Fedora Workstation |
+| [DevToys](https://devtoys.app/) | 🧰 Useful utilities for development |
+| [Microsoft SQL Server](https://beyondlocalhost.tech/2020/02/24/installing-sql-on-linux-mint/) | 🗃️ RDBMS platform for working with data |
 
-# Bash config
+---
 
-Bash simple template is available [here](https://github.com/bovrhovn/linux-setup/blob/main/.bashrc). 
+## 🧩 Gnome Extensions
 
-### Aliases and inital setup
+| Extension | Description |
+|-----------|-------------|
+| [ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/) | 📂 Different menus and options |
+| [Tiling Shell](https://extensions.gnome.org/extension/7065/tiling-shell/) | 🪟 Advanced tiling window management |
+| [Blur my shell](https://extensions.gnome.org/extension/3193/blur-my-shell/) | 🌫️ Define what to blur |
+| [Dash to dock](https://extensions.gnome.org/extension/307/dash-to-dock/) | 🍎 Creates a Mac-like dock |
+| [Dash to panel](https://extensions.gnome.org/extension/1160/dash-to-panel/) | 📏 Top or bottom bar with full customization |
+| [Burn my Windows](https://extensions.gnome.org/extension/4679/burn-my-windows/) | 🔥 Disintegrate windows with style |
+| [User themes](https://extensions.gnome.org/extension/19/user-themes/) | 🎨 Load shell themes from user directory |
+| [Caffeine](https://extensions.gnome.org/extension/517/caffeine/) | ☕ Disable screensaver and auto suspend |
+| [Quick Settings Tweaker](https://extensions.gnome.org/extension/5446/quick-settings-tweaker/) | ⚙️ Add media controls, notifications, remove buttons |
+| [CoverFlowAltTab](https://extensions.gnome.org/extension/97/coverflow-alt-tab/) | 🔄 3D app switcher |
+| [Vitals](https://extensions.gnome.org/extension/1460/vitals/) | 📈 Show CPU, memory, and other system info |
+| [Compiz Windows Effect](https://extensions.gnome.org/extension/3210/compiz-windows-effect/) | 🪄 Wobbly windows effect |
+| [Transparent Top Bar](https://extensions.gnome.org/extension/3960/transparent-top-bar-adjustable-transparency/) | 🔲 Transparent top bar with adjustable transparency |
 
-```console
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
-alias gdir='cd $HOME/Documents/Github'
-alias lss='exa -al --color=always --group-directories-first'
-alias home='cd $HOME'
-alias dwn='cd $HOME/Downloads/'
-alias wrk='cd $HOME/Documents/'
-alias proj='cd $HOME/Documents/Projects'
-alias ..='cd ..'
-```
+---
 
-# CREDITS
+## ✨ Nice to Have
 
-1. [Kubectl aliases ](https://github.com/ahmetb/kubectl-aliases) - collection of kubectl aliases for working with k8s
-2. [DistroTube repo](https://gitlab.com/dwt1) - aliases and config file inspiration from Derek Taylor
+| Tool | Description |
+|------|-------------|
+| [ripgrep](https://github.com/BurntSushi/ripgrep) | 🔍 Line-oriented search tool that recursively searches for a regex pattern |
+
+---
+
+## ⌨️ Bash Config & Aliases
+
+The full bash configuration is available in [`.bashrc`](https://github.com/bovrhovn/linux-setup/blob/main/.bashrc).
+
+### Common Aliases
+
+| Alias | Command | Description |
+|-------|---------|-------------|
+| `ll` | `ls -alF` | List all files with details |
+| `la` | `ls -A` | List almost all files |
+| `l` | `ls -CF` | List files in columns |
+| `lss` | `exa -al --color=always --group-directories-first` | Enhanced listing with exa |
+| `gdir` | `cd $HOME/Documents/Github` | Go to GitHub directory |
+| `home` | `cd $HOME` | Go to home directory |
+| `dwn` | `cd $HOME/Downloads/` | Go to Downloads directory |
+| `wrk` | `cd $HOME/Documents/` | Go to Documents directory |
+| `proj` | `cd $HOME/Documents/Projects` | Go to Projects directory |
+| `..` | `cd ..` | Go up one directory |
+
+### Kubectl Aliases
+
+Kubernetes aliases are loaded from [`kubectl_aliases`](./kubectl_aliases). A selection of commonly used ones:
+
+| Alias | Command |
+|-------|---------|
+| `k` | `kubectl` |
+| `kg` | `kubectl get` |
+| `klo` | `kubectl logs -f` |
+| `kex` | `kubectl exec -i -t` |
+| `kpf` | `kubectl port-forward` |
+| `ka` | `kubectl apply --recursive -f` |
+
+> 💡 See the full list in [`kubectl_aliases`](./kubectl_aliases).
+
+---
+
+## 📜 Scripts
+
+A collection of helper scripts is available in the [`scripts/`](./scripts/) folder.  
+See the [scripts README](./scripts/README.md) for full documentation.
+
+| Script | Description |
+|--------|-------------|
+| [`git-pull-all-branches.sh`](./scripts/git-pull-all-branches.sh) | Fetches and tracks all remote git branches locally |
+
+---
+
+## 🙏 Credits
+
+| Resource | Description |
+|----------|-------------|
+| [Kubectl aliases](https://github.com/ahmetb/kubectl-aliases) | Collection of kubectl aliases for working with Kubernetes |
+| [DistroTube repo](https://gitlab.com/dwt1) | Aliases and config file inspiration from Derek Taylor |
